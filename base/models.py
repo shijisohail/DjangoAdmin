@@ -25,6 +25,7 @@ class Blog(models.Model):
 class Machine (models.Model):   
      hosts =  models.ForeignKey(User, on_delete=models.SET_NULL ,null=True)
      mach = models.FileField(null=True)
+     expiry = models.DateTimeField(auto_now=False)
      cryptext = models.ForeignKey(CryptString,on_delete=models.SET_NULL,null=True)
      topics = models.ForeignKey(Topics, on_delete=models.SET_NULL ,null=True) #CAscade is waja se for eg agar Room del hogya to ye b hojaye
      name = models.CharField(max_length=255)
