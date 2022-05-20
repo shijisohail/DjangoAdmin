@@ -9,7 +9,7 @@ class CryptString(models.Model):
      HashString  = models.CharField(max_length=1000)
      def __str__(self):
          return self.HashString
-
+#Checking git upload
 class Blog(models.Model):
     hosts =  models.ForeignKey(User, on_delete=models.SET_NULL ,null=True)
     topics = models.ForeignKey(Topics, on_delete=models.SET_NULL ,null=True) #CAscade is waja se for eg agar Room del hogya to ye b hojaye
