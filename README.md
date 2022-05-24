@@ -1,2 +1,2 @@
 # DjangoAdmin
-Django Admin Panel 
+Django Admin Panel for Vuln Machines
